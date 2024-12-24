@@ -1421,4 +1421,40 @@ video {
   #portfolio h3 {
       font-size: 1.2rem;
   }
+  #service {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #about_me figure {
+      display: none;
+  }
+  .judul-desktop {
+      display: none;
+  }
+  .judul-mobile {
+      display: block;
+  }
+  #portfolio {
+    padding-top: 550px;
+    padding-bottom: 550px;
+  }
+  #experience section h3{
+    font-size: 1.8rem;
+  }
+  #experience section span{
+    font-size: 0.8rem;
+  }
+  #experience section hr{
+    display: none;
+  }
+  #experience section h4{
+    font-size: 0.8rem;
+  }
+  .ini {
+    display: none;
+  }
+  .ini2 {
+    display: none;
+  }
 }
