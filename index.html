@@ -2,12 +2,14 @@
 <html class="scroll-smooth">
 
 <head>
+    <meta charset="UTF-8">
     <title>Davin Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="border-0 bg-gray-50">
-    <div class="min-h-screen bg-teal-100"><!--? HEADER-MAIN-FOOTER -->
+    <div class="min-h-screen"><!--? HEADER-MAIN-FOOTER -->
         <div><!--* HEADER-MAIN -->
             <header
                 class="bg-primary text-secondary py-5 h-fit w-100 flex justify-center items-center text-sm"> <!--* HEADER-->
@@ -15,7 +17,12 @@
                     <a href="#about_me"> <!--* LOGO-->
                         <img src="image/davin-high-resolution-logo.png" alt="logo" class="w-28 h-fit hover:px-0.5">
                     </a>
-                    <div class="flex gap-10 flex-wrap font-medium"><!-- ? LINK-->
+                    <button id="menu-toggle" class="hidden text-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                    <div id="desktop-menu" class="flex gap-10 flex-wrap font-medium"><!-- ? LINK-->
                         <a href="./#service"><span class="hover:text-accents">SERVICE</span></a>
                         <a href="./#portfolio"><span class="hover:text-accents">PORTFOLIO</span></a>
                         <a href="./#experience"><span class="hover:text-accents">EXPERIENCE</span></a>
@@ -23,6 +30,19 @@
                     </div>
                 </nav>
             </header>
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu" class="hidden absolute top-full right-0 bg-secondary w-100 text-primary text-right">
+                <a href="./#service" class="block px-14 py-2 hover:bg-secondary hover:text-accents">SERVICE</a>
+                <a href="./#portfolio" class="block px-14 py-2 hover:bg-secondary hover:text-accents">PORTFOLIO</a>
+                <a href="./#experience" class="block px-14 py-2 hover:bg-secondary hover:text-accents">EXPERIENCE</a>
+                <a href="./#contact" class="block px-14 py-2 hover:bg-secondary hover:text-accents">CONTACT</a>
+            </div>
+            <script>
+                document.getElementById('menu-toggle').addEventListener('click', function () {
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.toggle('hidden');
+                });
+            </script>
             <main class="bg-primary text-secondary py-3 h-fit w-100"> <!--* MAIN-->
                 <!-- ? ABOUT ME -->
                 <div id="about_me" 
@@ -32,7 +52,7 @@
                             class="w-fit h-fit">
                     </figure>
                     <article class="basis-1/2 mx-2">
-                        <section class="flex items-center justify-start gap-2"> <!--* JUDUL 1-->
+                        <section class="judul flex items-center justify-start gap-2"> <!--* JUDUL 1-->
                             <hr class="bg-accents w-10 h-2">
                             <span class="font-extralight tracking-ombo text-accents">MY NAME IS</span>
                             <hr class="bg-accents w-64 h-2">
@@ -103,7 +123,7 @@
                             <h3 class="font-extrabold text-accents text-4xl">BEAUTIFUL PORTFOLIO</h3>
                         </section>
                         <figure class=" basis-3/4 grid grid-cols-2 gap-10 mr-10"> <!--* CARD-->
-                            <div class="bg-secondary shadow-2xl justify-center items-center px-5 pt-5 rounded-lg">
+                            <div class="bg-secondary shadow-2xl justify-center items-center px-5 py-5 rounded-lg">
                                 <img src="image/temc.gif" alt="page-1" class=" object-cover opacity-70 mb-3">
                                 <h4 class="font-bold uppercase tracking-wider text-accents ">Website TEMC Agency</h4>
                                 <h5 class="font-mono font-light text-primary">WordPress</h5>
@@ -153,7 +173,7 @@
             <hr class="mb-4 mt-5">
             <div class="flex justify-between items-center ml-10 flex-wrap-reverse"> <!--? CONTENT-->
                 <form id="contactForm" class="flex flex-col gap-3 justify-center"> <!--* FORM-->
-                    <div class="flex flex-row flex-wrap gap-4">
+                    <div class="formulir flex flex-row flex-wrap gap-4">
                         <div class="flex flex-col gap-3">
                             <label for="name" class="font-bold text-lg">1.Name</label>
                             <input type="text" id="name" name="name" class="bg-gray-100 border-x-2 border-y-2 border-gray-950 px-2 py-2 font-medium hover:bg-blue-200" required>

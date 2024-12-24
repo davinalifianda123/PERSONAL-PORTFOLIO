@@ -1,5 +1,6 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+  Theme Name: Portfolio
+  Theme URI:
 */
 
 /*
@@ -764,6 +765,14 @@ video {
   max-width: 42rem;
 }
 
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 .basis-1\/2 {
   flex-basis: 50%;
 }
@@ -1013,6 +1022,11 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-14 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-4 {
@@ -1335,4 +1349,76 @@ video {
   font-family: "Dynalight", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  header nav div {
+      flex-direction: column;
+      gap: 20px;
+  }
+  #menu-toggle {
+      display: block;
+  }
+  #desktop-menu {
+      display: none;
+  }
+  #about_me {
+      flex-direction: column;
+  }
+  #about_me .judul {
+      margin-bottom: 10px;
+      justify-content: center;
+  }
+  #about_me figure, #about_me article {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+  #about_me nav {
+      justify-content: center;
+  }
+  #service {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #service .grid {
+      grid-template-columns: 1fr;
+  }
+  #portfolio {
+      padding-top: 850px;
+      padding-bottom: 850px;
+  }
+  #portfolio article {
+      flex-direction: column;
+  }
+  #portfolio section {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  #portfolio figure {
+      grid-template-columns: 1fr;
+  }
+  form .formulir {
+      flex-direction: column;
+  }
+  footer article {
+      margin-right: 0;
+      padding-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  header nav div a {
+      font-size: 0.8rem;
+  }
+  section h3 {
+      font-size: 1.5rem;
+  }
+  #portfolio h3 {
+      font-size: 1.2rem;
+  }
 }
