@@ -3,160 +3,142 @@
 
 <head>
     <title>Davin Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="border-0 bg-gray-50">
     <div class="min-h-screen bg-teal-100"><!--? HEADER-MAIN-FOOTER -->
         <div><!--* HEADER-MAIN -->
             <header
-                class="bg-gray-950 text-teal-500 py-5 h-fit w-100 flex justify-center items-center text-lg sticky top-0 z-10">
-                <nav class="flex justify-around w-10/12 items-center font-'poppins',serif">
-                    <div class="basis-1/4 gap-1 flex flex-wrap justify-start font-bold"><!-- ? LOGO -->
-                        <a href="./#about_me" class="hover:text-white">
-                        <span>ABOUT ME</span>
-                    </div>
-                    <div class="basis-1/2 flex justify-evenly gap-1 flex-wrap font-bold"><!-- ? LINK-->
-                        <a href="./#service"><span class="text-green-300 hover:text-slate-100">Service</span></a>
-                        <a href="./#portfolio"><span class="hover:text-slate-100">Portfolio</span></a>
-                        <a href="./#experience"><span class="text-green-300 hover:text-slate-100">Experience</span></a>
-                        <a href="./#contact"><span class="hover:text-slate-100">Contact</span></a>
-                    </div>
-                    <div class="basis-1/4 flex flex-wrap justify-end gap-1 font-bold"><!-- ? LOGO-->
-                        <a href="https://smashthewalls.com/">
-                            <img src="./image/wave.gif" alt="gif" class="w-12 h-12 rounded-xl hover:w-14">
-                        </a>
+                class="bg-primary text-secondary py-5 h-fit w-100 flex justify-center items-center text-sm"> <!--* HEADER-->
+                <nav class="flex justify-between w-10/12 items-center">
+                    <a href="#about_me"> <!--* LOGO-->
+                        <img src="image/davin-high-resolution-logo.png" alt="logo" class="w-28 h-fit hover:px-0.5">
+                    </a>
+                    <div class="flex gap-5 flex-wrap font-bold"><!-- ? LINK-->
+                        <a href="./#service"><span class="hover:text-accents">Service</span></a>
+                        <a href="./#portfolio"><span class="hover:text-accents">Portfolio</span></a>
+                        <a href="./#experience"><span class="hover:text-accents">Experience</span></a>
+                        <a href="./#contact"><span class="hover:text-accents">Contact</span></a>
                     </div>
                 </nav>
             </header>
-             <!--! spacing layar-->
-            <div 
-                class="relative -top-0 bg-teal-100 w-100 h-0">
-            </div>
-             <!--! spacing layar-->
-            <main class="bg-teal-100">
+            <main class="bg-primary text-secondary py-3 h-fit w-100"> <!--* MAIN-->
                 <!-- ? ABOUT ME -->
                 <div id="about_me" 
-                    class="flex bg-teal-100 w-10/12 mx-auto h-screen items-center justify-center">
-                    <figure class="basis-1/2"> <!--* IMAGE PROFIL-->
-                        <img src="./image/IMG_20210302_090005.JPG" alt="profil"
-                            class="w-72 border-teal-700 border-x-4 border-y-4 mx-auto hover:shadow-2xl">
+                    class="flex w-10/12 bg-primary mx-auto h-screen items-center justify-center"> <!--* ABOUT ME-->
+                    <figure class="basis-1/2 mx-auto"> <!--* IMAGE PROFIL-->
+                        <img src="image/Profile.png" alt="profil"
+                            class="w-fit h-fit">
                     </figure>
                     <article class="basis-1/2 mx-2">
                         <section class="flex items-center justify-start gap-2"> <!--* JUDUL 1-->
-                            <hr class="bg-gray-950 w-10 h-2">
-                            <span class="font-extralight tracking-ombo">MY NAME IS</span>
-                            <hr class="bg-gray-950 w-64 h-2">
+                            <hr class="bg-accents w-10 h-2">
+                            <span class="font-extralight tracking-ombo text-accents">MY NAME IS</span>
+                            <hr class="bg-accents w-64 h-2">
                         </section>
                         <section class="mt-0 mb-5 text-6xl"> <!--* NAMA-->
-                            <span class="font-extrabold text-teal-700">Davin</span>
-                            <span class="font-bold text-green-300">Alifianda</span>
-                            <span class="font-extrabold text-teal-700">Adytia</span>
+                            <span class="font-extrabold text-secondary">Davin</span>
+                            <span class="font-bold text-secondary">Alifianda</span>
+                            <span class="font-extrabold text-secondary">Adytia</span>
                         </section>
-                        <p class="mb-5 text-lg"> <!--* DESKRIPSI-->
-                            I'm was born on <i>june 23,2005</i> in <i>Semarang</i> which is a city in <i>Indonesia</i>. I just graduated high school this year, and passed into college in <i>Semarang</i>. I really exited to learn and practice about <i>Programming</i> since middle school. Now,
-                            i'm a <b>web development</b> with <b>1 month</b> of experience. I enjoy building <i>sites & portfolio</i>. My focus is Tailwind <u>HTML & CSS.</u>
-                        </p>
+                        <p class="mb-5 text-lg text-accents">
+                            I am a 19-year-old college student based in <i>Semarang, Indonesia</i>, pursuing my passion for <i>Programming</i> and <i>Web Development</i>. With several projects under my belt, I have hands-on experience in building <b>websites</b> and <b>applications</b>, focusing on user-friendly interfaces and responsive designs. My expertise includes <u>HTML, CSS, Tailwind, WordPress</u>, and I am continuously learning to expand my skills in modern web technologies. I enjoy creating functional and visually appealing web solutions that help individuals and businesses achieve their goals.
+                        </p>                        
                         <nav class="flex space-x-5"> <!--* SOCIAL MEDIA-->
-                            <a href="https://www.twitter.com/davin_adytia/" class="w-6 h-6 hover:px-0.5"><img src="./image/twitter.png" alt="twitter" class="bg-teal-100"></a>
-                            <a href="https://www.instagram.com/davin_alifiand/" class="w-6 h-6 hover:px-0.5"><img src="./image/instagram.png" alt="instagram"></a>
-                            <a href="https://github.com/davinalifianda123"><img src="./image/github.png" alt="github" class="w-6 h-6 hover:px-0.5"></a>
+                            <a href="https://www.linkedin.com/in/davin-alifianda-adytia/" class="w-6 h-6 hover:px-0.5"><img src="image/linkedin-logo.png" alt="linkedin"></a>
+                            <a href="https://www.instagram.com/davin_alifiand/" class="w-6 h-6 hover:px-0.5"><img src="image/instagram.png" alt="instagram"></a>
+                            <a href="https://github.com/davinalifianda123" class="w-6 h-6 hover:px-0.5"><img src="image/github.png" alt="github"></a>
                         </nav>
                     </article>
                 </div>
                 <!-- ? SERVICE -->
                 <div id="service"
-                    class="flex bg-gray-950 w-10/12 mx-auto h-screen justify-center text-gray-900 flex-col rounded-xl">
+                    class="flex bg-secondary w-10/12 mx-auto h-screen justify-center text-secondary flex-col rounded-xl my-8">
                     <div 
                         class="flex justify-center flex-col h-fit mb-10"> <!--* JUDUL 1-->
                         <div class="flex justify-center items-center gap-3">
-                            <hr class="h-2 w-10 bg-gray-100">
-                            <span class="font-extralight tracking-ombo text-gray-100">SERVICE</span>
-                            <hr class="h-2 w-10 bg-gray-100">
+                            <hr class="h-2 w-10 bg-primary">
+                            <span class="font-extralight tracking-ombo text-primary">SERVICE</span>
+                            <hr class="h-2 w-10 bg-primary">
                         </div>
-                        <h3 class="text-green-300 font-extrabold text-3xl tracking-widest mx-auto">SPESIALIST IN</h3>
+                        <h3 class="text-accents font-extrabold text-3xl tracking-widest mx-auto">WHAT I OFFER</h3>
                     </div>
                     <div class="grid grid-cols-3 mx-auto gap-10 px-10"> <!--* CARD-->
                         <article
-                            class="bg-slate-100 shadow-green-300 shadow-2xl flex justify-center flex-col py-4 rounded-lg">
+                            class="bg-primary shadow-accent shadow-2xl flex justify-center flex-col py-4 rounded-lg">
                             <picture class="mx-auto mb-4">
-                                <img src="./image/web-development.png" alt="icon-web-development" class="w-20 h-20">
+                                <img src="image/web-development.png" alt="icon-web-development" class="w-20 h-20">
                             </picture>
                             <h4 class="font-bold text-lg tracking-widest uppercase text-center">web development</h4>
-                            <p class="text-center px-5 py-3">I can create websites with HTML and CSS. In the future I
-                                will continue to develop this skill until I become an expert.</p>
+                            <p class="text-center px-5 py-3">I specialize in creating responsive and dynamic websites using <u>HTML</u>, <u>CSS</u>, <u>Tailwind</u>, and <u>WordPress</u>. Whether it’s personal portfolios or business websites, I build solutions tailored to your needs.</p>
                         </article>
                         <article
-                            class="bg-slate-100 shadow-green-300 shadow-2xl flex justify-center flex-col py-4 rounded-lg">
+                            class="bg-primary shadow-accent shadow-2xl flex justify-center flex-col py-4 rounded-lg">
                             <picture class="mx-auto mb-4">
-                                <img src="./image/graphic-desain.png" alt="icon-graphic-desain" class="w-20 h-20">
+                                <img src="image/graphic-desain.png" alt="icon-graphic-desain" class="w-20 h-20">
                             </picture>
                             <h4 class="font-bold text-lg tracking-widest uppercase text-center">graphic desain</h4>
-                            <p class="text-center px-5 py-3">Since childhood I have been trained to make drawings or
-                                cartoon designs. I have talent in this field with sufficient expertise</p>
+                            <p class="text-center px-5 py-3">With a strong foundation in creative tools, I design visually appealing logos, banners, and social media content to enhance your brand’s presence.</p>
                         </article>
                         <article
-                            class="bg-slate-100 shadow-green-300 shadow-2xl flex justify-center flex-col py-4 rounded-lg">
+                            class="bg-primary shadow-accent shadow-2xl flex justify-center flex-col py-4 rounded-lg">
                             <picture class="mx-auto mb-4">
-                                <img src="./image/photo-editor.png" alt="icon-photo-editor" class="w-20 h-20">
+                                <img src="image/app-development.png" alt="icon-app-development" class="w-20 h-20">
                             </picture>
-                            <h4 class="font-bold text-lg tracking-widest uppercase text-center">photo editor</h4>
-                            <p class="text-center px-5 py-3">In this field, I actually like it because I often edit my
-                                photos which I feel are unsatisfactory. So I got used to it because I often do it.</p>
+                            <h4 class="font-bold text-lg tracking-widest uppercase text-center">mobile development</h4>
+                            <p class="text-center px-5 py-3">I develop user-friendly and efficient mobile applications using <u>Flutter</u>, ensuring a seamless experience across platforms. My focus is on performance and intuitive design.</p>
                         </article>
                     </div>
                 </div>
                 <!-- ? PORTFOLIO -->
                 <div id="portfolio" 
-                    class="flex bg-teal-100 w-10/12 mx-auto h-screen items-center justify-center">
+                    class="flex w-10/12 mx-auto h-screen items-center justify-center my-8">
                     <article class="flex flex-row justify-around gap-2">
                         <section class="basis-1/4 flex flex-col ml-10"> <!--* JUDUL 1-->
                             <div class="flex items-center">
-                                <hr class="h-2 w-8 bg-gray-950">
-                                <span class="text-teal-700 text-lg tracking-ombo ml-2 font-extralight">MY WORKS</span>
+                                <hr class="h-2 w-8 bg-secondary">
+                                <span class="text-secondary text-lg tracking-ombo ml-2 font-extralight">MY WORKS</span>
                             </div>
-                            <h3 class="font-extrabold text-teal-700 text-4xl">BEAUTIFUL PORTFOLIO</h3>
+                            <h3 class="font-extrabold text-accents text-4xl">BEAUTIFUL PORTFOLIO</h3>
                         </section>
                         <figure class=" basis-3/4 grid grid-cols-2 gap-10 mr-10"> <!--* CARD-->
-                            <div class="bg-teal-700 shadow-2xl justify-center items-center px-5 pt-5 rounded-lg">
-                                <img src="./image/download.gif" alt="page-1" class=" object-cover opacity-70 mb-3">
-                                <h4 class="font-bold uppercase tracking-wider text-green-300 ">Web Diary Development</h4>
-                                <h5 class="font-mono font-light text-green-100">HTML & CSS</h5>
+                            <div class="bg-secondary shadow-2xl justify-center items-center px-5 pt-5 rounded-lg">
+                                <img src="image/download.gif" alt="page-1" class=" object-cover opacity-70 mb-3">
+                                <h4 class="font-bold uppercase tracking-wider text-accents ">Web Diary Development</h4>
+                                <h5 class="font-mono font-light text-primary">HTML & CSS</h5>
                             </div>
-                            <div class="bg-teal-700 shadow-2xl justify-center items-center px-5 py-5 rounded-lg">
-                                <img src="./image/download (1).gif" alt="page-2" class=" object-cover opacity-70 mb-3">
-                                <h4 class="font-bold uppercase tracking-wider text-green-300 ">Website Portfolio</h4>
-                                <h5 class="font-mono font-light text-green-100">TailWind</h5>
+                            <div class="bg-secondary shadow-2xl justify-center items-center px-5 py-5 rounded-lg">
+                                <img src="image/download (1).gif" alt="page-2" class=" object-cover opacity-70 mb-3">
+                                <h4 class="font-bold uppercase tracking-wider text-accents ">Website Portfolio</h4>
+                                <h5 class="font-mono font-light text-primary">TailWind</h5>
                             </div>
                         </figure>
                     </article>
                 </div>
                 <!-- ? EXPERIENCE -->
                 <div id="experience" 
-                    class="flex bg-teal-700 w-10/12 h-screen justify-center items-center mx-auto rounded-xl mb-8">
+                    class="flex bg-secondary w-10/12 h-screen justify-center items-center mx-auto rounded-xl my-8">
                     <article class="w-10/12 flex flex-row-reverse">
                         <section class="flex flex-col justify-end"> <!--* JUDUL-1-->
                             <div class="flex justify-end items-center gap-2">
-                                <span class="font-extralight text-slate-50 tracking-ombo">MY JOURNEY</span>
-                                <hr class="h-2 w-28 bg-slate-50">
+                                <span class="font-extralight text-primary tracking-ombo">MY JOURNEY</span>
+                                <hr class="h-2 w-28 bg-primary">
                             </div> 
-                            <h3 class="font-extrabold text-green-300 text-6xl flex justify-end">EXPERIENCE</h3>    
-                            <h4 class="font-light text-gray-100 text-md font-mono flex justify-end">------------ coming soon</h4>     
+                            <h3 class="font-extrabold text-accents text-6xl flex justify-end">EXPERIENCE</h3>    
+                            <h4 class="font-light text-primary text-md font-mono flex justify-end">------------ coming soon</h4>     
                         </section>
                     </article>
                 </div>
             </main>
         </div>
-        <footer id="contact" class="flex flex-col justify-center bg-slate-50 w-100 h-fit pb-4 mx-auto rounded-xl"> <!--* FOOTER-->
+        <footer id="contact" class="flex bg-primary flex-col justify-center w-100 h-fit pb-4 mx-auto rounded-xl"> <!--* FOOTER-->
             <section class="pt-5 ml-10"> <!--?  JUDUL-1-->
                 <div class="flex flex-row justify-start items-center gap-2">
-                    <hr class="bg-black w-10 h-2">
-                    <span class="uppercase text-black font-extralight tracking-ombo">interested with me</span>
+                    <hr class="bg-secondary w-10 h-2">
+                    <span class="uppercase text-secondary font-extralight tracking-ombo">interested with me</span>
                 </div>
-                <h3 class="font-extrabold text-4xl text-black flex justify-start">CONTACT HERE</h3>
+                <h3 class="font-extrabold text-4xl text-accents flex justify-start">CONTACT HERE</h3>
             </section>
             <hr class="mb-4 mt-5">
             <div class="flex justify-between items-center ml-10 flex-wrap-reverse"> <!--? CONTENT-->
@@ -175,27 +157,27 @@
                     </div>
                     <div class="flex items-start">
                         <div class="flex justify-center">
-                            <input type="submit" value="Send!" class="bg-black text-white border-x-2 border-y-2 border-gray-950 px-12 py-2 hover:bg-blue-900 hover:text-stone-100">
+                            <input type="submit" value="Send!" class="bg-accents text-primary border-x-2 border-y-2 border-gray-950 px-12 py-2 hover:bg-secondary hover:text-accents">
                         </div>
                     </div>
                 </form>
                 <article class="flex flex-col border-l-2 border-l-gray-300 pl-5 pb-4 gap-5 mr-10"> <!--* SAMPING-FORM-->
                     <div class="flex flex-row items-center">
-                        <a href="https://goo.gl/maps/qhbRkobh1eJDukzv9/" class="w-full ml-4"><img src="./image/location.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
+                        <a href="https://goo.gl/maps/qhbRkobh1eJDukzv9/" class="ml-4"><img src="image/location.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
                         <address class="flex flex-col justify-start pl-4">
                             <h3 class="font-bold text-lg mb-0">Address</h3>
                             <span class="font-light text-sm w-64">72 St. Seruni l, 20196 Tlogosari Kulon, Semarang, Indonesia </span>
                         </address>
                     </div>
                     <div class="flex flex-row items-center">
-                        <a href="https://web.whatsapp.com/" class="w-full ml-4"><img src="./image/whatsapp.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
+                        <a href="https://web.whatsapp.com/" class="ml-4"><img src="image/whatsapp.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
                         <address class="flex flex-col justify-start pl-4">
                             <h3 class="font-bold text-lg mb-0">Whatsapp</h3>
                             <span class="font-light text-sm w-64">0813 2702 9089</span>
                         </address>
                     </div>
                     <div class="flex flex-row items-center">
-                        <a href="mailto:dav1nalifianda@gmail.com/" class="w-full ml-4"><img src="./image/gmail.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
+                        <a href="mailto:dav1nalifianda@gmail.com/" class="ml-4"><img src="image/gmail.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
                         <address class="flex flex-col justify-start pl-4">
                             <h3 class="font-bold text-lg mb-0">Gmail</h3>
                             <span class="font-light text-sm w-64">dav1nalifianda@gmail.com</span>
