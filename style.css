@@ -1373,10 +1373,13 @@ video {
       margin-bottom: 10px;
       justify-content: center;
   }
-  #about_me figure, #about_me article {
+  #about_me article {
       width: 100%;
       text-align: center;
       margin-bottom: 50px;
+  }
+  #about_me figure {
+    display: none;
   }
   #about_me nav {
       justify-content: center;
@@ -1411,7 +1414,7 @@ video {
       padding-left: 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 549px) {
   header nav div a {
       font-size: 0.8rem;
   }
@@ -1435,10 +1438,7 @@ video {
   .judul-mobile {
       display: block;
   }
-  #portfolio {
-    padding-top: 550px;
-    padding-bottom: 550px;
-  }
+  
   #experience section h3{
     font-size: 1.8rem;
   }
