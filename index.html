@@ -15,18 +15,18 @@
                     <a href="#about_me"> <!--* LOGO-->
                         <img src="image/davin-high-resolution-logo.png" alt="logo" class="w-28 h-fit hover:px-0.5">
                     </a>
-                    <div class="flex gap-5 flex-wrap font-bold"><!-- ? LINK-->
-                        <a href="./#service"><span class="hover:text-accents">Service</span></a>
-                        <a href="./#portfolio"><span class="hover:text-accents">Portfolio</span></a>
-                        <a href="./#experience"><span class="hover:text-accents">Experience</span></a>
-                        <a href="./#contact"><span class="hover:text-accents">Contact</span></a>
+                    <div class="flex gap-10 flex-wrap font-medium"><!-- ? LINK-->
+                        <a href="./#service"><span class="hover:text-accents">SERVICE</span></a>
+                        <a href="./#portfolio"><span class="hover:text-accents">PORTFOLIO</span></a>
+                        <a href="./#experience"><span class="hover:text-accents">EXPERIENCE</span></a>
+                        <a href="./#contact"><span class="hover:text-accents">CONTACT</span></a>
                     </div>
                 </nav>
             </header>
             <main class="bg-primary text-secondary py-3 h-fit w-100"> <!--* MAIN-->
                 <!-- ? ABOUT ME -->
                 <div id="about_me" 
-                    class="flex w-10/12 bg-primary mx-auto h-screen items-center justify-center"> <!--* ABOUT ME-->
+                    class="flex w-10/12 bg-primary mx-auto h-screen items-center justify-center my-16"> <!--* ABOUT ME-->
                     <figure class="basis-1/2 mx-auto"> <!--* IMAGE PROFIL-->
                         <img src="image/Profile.png" alt="profil"
                             class="w-fit h-fit">
@@ -54,7 +54,7 @@
                 </div>
                 <!-- ? SERVICE -->
                 <div id="service"
-                    class="flex bg-secondary w-10/12 mx-auto h-screen justify-center text-secondary flex-col rounded-xl my-8">
+                    class="flex bg-secondary w-10/12 mx-auto h-screen justify-center text-secondary flex-col rounded-xl my-16">
                     <div 
                         class="flex justify-center flex-col h-fit mb-10"> <!--* JUDUL 1-->
                         <div class="flex justify-center items-center gap-3">
@@ -93,7 +93,7 @@
                 </div>
                 <!-- ? PORTFOLIO -->
                 <div id="portfolio" 
-                    class="flex w-10/12 mx-auto h-screen items-center justify-center my-8">
+                    class="flex w-10/12 mx-auto h-screen items-center justify-center my-16">
                     <article class="flex flex-row justify-around gap-2">
                         <section class="basis-1/4 flex flex-col ml-10"> <!--* JUDUL 1-->
                             <div class="flex items-center">
@@ -104,21 +104,31 @@
                         </section>
                         <figure class=" basis-3/4 grid grid-cols-2 gap-10 mr-10"> <!--* CARD-->
                             <div class="bg-secondary shadow-2xl justify-center items-center px-5 pt-5 rounded-lg">
-                                <img src="image/download.gif" alt="page-1" class=" object-cover opacity-70 mb-3">
-                                <h4 class="font-bold uppercase tracking-wider text-accents ">Web Diary Development</h4>
-                                <h5 class="font-mono font-light text-primary">HTML & CSS</h5>
+                                <img src="image/temc.gif" alt="page-1" class=" object-cover opacity-70 mb-3">
+                                <h4 class="font-bold uppercase tracking-wider text-accents ">Website TEMC Agency</h4>
+                                <h5 class="font-mono font-light text-primary">WordPress</h5>
                             </div>
                             <div class="bg-secondary shadow-2xl justify-center items-center px-5 py-5 rounded-lg">
-                                <img src="image/download (1).gif" alt="page-2" class=" object-cover opacity-70 mb-3">
-                                <h4 class="font-bold uppercase tracking-wider text-accents ">Website Portfolio</h4>
-                                <h5 class="font-mono font-light text-primary">TailWind</h5>
+                                <img src="image/d3kat.gif" alt="page-2" class=" object-cover opacity-70 mb-3">
+                                <h4 class="font-bold uppercase tracking-wider text-accents ">Website D3KAT</h4>
+                                <h5 class="font-mono font-light text-primary">WordPress</h5>
+                            </div>
+                            <div class="bg-secondary shadow-2xl justify-center items-center px-5 py-5 rounded-lg">
+                                <img src="image/wicara_admin_web.gif" alt="page-2" class=" object-cover opacity-70 mb-3">
+                                <h4 class="font-bold uppercase tracking-wider text-accents ">Website WICARA Admin</h4>
+                                <h5 class="font-mono font-light text-primary">TailWind & PHP</h5>
+                            </div>
+                            <div class="bg-secondary shadow-2xl justify-center items-center px-5 py-5 rounded-lg">
+                                <img src="image/wicara_admin_mobile.gif" alt="page-2" class=" object-cover opacity-70 mb-3">
+                                <h4 class="font-bold uppercase tracking-wider text-accents ">WICARA Admin Mobile</h4>
+                                <h5 class="font-mono font-light text-primary">Flutter</h5>
                             </div>
                         </figure>
                     </article>
                 </div>
                 <!-- ? EXPERIENCE -->
                 <div id="experience" 
-                    class="flex bg-secondary w-10/12 h-screen justify-center items-center mx-auto rounded-xl my-8">
+                    class="flex bg-secondary w-10/12 h-screen justify-center items-center mx-auto rounded-xl my-16">
                     <article class="w-10/12 flex flex-row-reverse">
                         <section class="flex flex-col justify-end"> <!--* JUDUL-1-->
                             <div class="flex justify-end items-center gap-2">
@@ -142,35 +152,28 @@
             </section>
             <hr class="mb-4 mt-5">
             <div class="flex justify-between items-center ml-10 flex-wrap-reverse"> <!--? CONTENT-->
-                <form action="#" method="post" class="flex flex-col gap-3 justify-center"> <!--* FORM-->
+                <form id="contactForm" class="flex flex-col gap-3 justify-center"> <!--* FORM-->
                     <div class="flex flex-row flex-wrap gap-4">
-                        <div action="" class="flex flex-col gap-3">
-                            <label for="username" class="font-bold text-lg">1.Name</label>
-                            <input type="text" name="contact" class="bg-gray-100 border-x-2 border-y-2 border-gray-950 px-2 py-2 font-medium hover:bg-blue-200 ">
+                        <div class="flex flex-col gap-3">
+                            <label for="name" class="font-bold text-lg">1.Name</label>
+                            <input type="text" id="name" name="name" class="bg-gray-100 border-x-2 border-y-2 border-gray-950 px-2 py-2 font-medium hover:bg-blue-200" required>
                             <label for="email" class="font-bold text-lg">2.Email</label>
-                            <input type="email" name="email" class="bg-gray-100 border-x-2 border-y-2 border-gray-950 px-2 py-2 font-medium hover:bg-blue-200">
+                            <input type="email" id="email" name="email" class="bg-gray-100 border-x-2 border-y-2 border-gray-950 px-2 py-2 font-medium hover:bg-blue-200" required>
                         </div>
-                        <div action="" class="flex flex-col gap-3">
-                            <label for="Description" class="font-bold text-lg">3.Description</label>
-                            <textarea name="descripsion" cols="26" rows="5"class="bg-gray-100 border-x-2 border-y-2 border-gray-950 px-2 py-2 font-medium hover:bg-blue-200"></textarea>
+                        <div class="flex flex-col gap-3">
+                            <label for="message" class="font-bold text-lg">3.Description</label>
+                            <textarea id="message" name="message" cols="26" rows="5"class="bg-gray-100 border-x-2 border-y-2 border-gray-950 px-2 py-2 font-medium hover:bg-blue-200" required></textarea>
                         </div>
                     </div>
                     <div class="flex items-start">
                         <div class="flex justify-center">
-                            <input type="submit" value="Send!" class="bg-accents text-primary border-x-2 border-y-2 border-gray-950 px-12 py-2 hover:bg-secondary hover:text-accents">
+                            <button type="submit" class="bg-accents text-primary border-x-2 border-y-2 border-gray-950 px-12 py-2 hover:bg-secondary hover:text-accents">Send!</button>
                         </div>
                     </div>
                 </form>
                 <article class="flex flex-col border-l-2 border-l-gray-300 pl-5 pb-4 gap-5 mr-10"> <!--* SAMPING-FORM-->
                     <div class="flex flex-row items-center">
-                        <a href="https://goo.gl/maps/qhbRkobh1eJDukzv9/" class="ml-4"><img src="image/location.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
-                        <address class="flex flex-col justify-start pl-4">
-                            <h3 class="font-bold text-lg mb-0">Address</h3>
-                            <span class="font-light text-sm w-64">72 St. Seruni l, 20196 Tlogosari Kulon, Semarang, Indonesia </span>
-                        </address>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <a href="https://web.whatsapp.com/" class="ml-4"><img src="image/whatsapp.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
+                        <a href="https://wa.me/6281327029089" class="ml-4"><img src="image/whatsapp.png" alt="icon" class="w-8 h-8 hover:px-0.5"></a>
                         <address class="flex flex-col justify-start pl-4">
                             <h3 class="font-bold text-lg mb-0">Whatsapp</h3>
                             <span class="font-light text-sm w-64">0813 2702 9089</span>
@@ -197,6 +200,28 @@
             </section>
         </footer>
     </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("lwWUyVhwtRs8HTlOP");
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const params = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+    
+            emailjs.send("service_zsz80k7", "template_tqt35xa", params)
+                .then(function(response) {
+                    alert("Email sent successfully!");
+                }, function(error) {
+                    console.error("Error:", error);
+                    alert("Failed to send email. Please try again later.");
+                });
+        });
+    </script>
 </body>
 
 </html>
